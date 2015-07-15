@@ -100,13 +100,11 @@ $(document).ready(function(){
             player1Score ++
             playerTurn ++
             $('#q10Card').toggle("drop");
-            $('#introCard').toggle("drop");
             playerSwitch();
     });
     $('.q10Btn').click(function(){
             playerTurn ++
             $('#q10Card').toggle("drop");
-            $('#intoCard').toggle("drop");
             playerSwitch();
     });
     //Winner Card
@@ -125,29 +123,28 @@ $(document).ready(function(){
         if(playerTurn === 1){
             $('#player1Total').attr('data-badge', player1Score);
             this.player1Score = 0
+            $('#introCard').toggle("drop")
         }
         if(playerTurn === 2){
             this.player2Score = player1Score
             $('#player2Total').attr('data-badge', player2Score);
-            $('#introCard').toggle("drop");
+            getWinner();
             $('#scoreCard').toggle("drop");
         }
     }
 
-   //  function winner(){
-   //      if(player1Score > player2Score){ 
-   //          $('#score').text("The force is with " + '#name1')
-   //      }else if (player1Score < player2Score){
-   //          $('#score').text("The force is with " + '#name2')
-   //      }else if (player1score === player2Score){ 
-   //          $('#score').text("I find your lack of win, disturbing...")
-   //      }
-   // }
+    function getWinner(){
+        if($("#player1Total").attr("data-badge") > $("#player2Total").attr("data-badge")){
+            $('#score').text("The force is with Player 1")
+        }else if($("#player1Total").attr("data-badge") < $("#player2Total").attr("data-badge")){
+            $('#score').text("The force is with Player 2")
+        }else if($("#player1Total").attr("data-badge") = $("#player2Total").attr("data-badge")){
+            $('#score').text("I find your lack of win, disturbing...")
+        }
 
+   };  
     //TO DO
-
-    //Fix bugs
 
     //Clean up code, add card q's & a's into arrays
 
-    //Update winner card to get winning player's name
+    //Update winner card to get winning player's name from input field
