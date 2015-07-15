@@ -1,6 +1,13 @@
+
 body {
-	background-image: url('http://wisdomdegree.com/wp-content/uploads/2013/11/black-metallic-background-1.jpg');
+	/*background-image: url('http://cdn.wonderfulengineering.com/wp-content/uploads/2013/12/metal-wallpaper-6.jpg');*/
+	background-image: url('http://rocketconstructionllc.com/wp-content/uploads/Stars.jpg');
 }
+h4{
+	color: white;
+  text-align: center;
+}
+/*Navagation Bar*/
 .layout-transparent {
   background: url('../assets/demos/transparent.jpg') center / cover;
 }
@@ -9,4 +16,113 @@ body {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
+}
+.mdl-navigation{
+  text-align: center;
+}
+.mdl-layout__content{
+  text-align: center;
+}
+.mdl-cell{
+  font-weight: bold;
+  padding: 20px;
+}
+.mdl-card{
+}
+/*Paver vs. Player*/
+.mdl-textfield__label{
+	color: white;
+  text-align: center;
+}
+.mdl-textfield__input{
+  text-align: center;
+	color: white;
+}
+.mdl-badge {
+  color: white;
+}
+/*question cards*/
+.demo-card-wide.mdl-card {
+ width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+ color: #fff;
+ height: 176px;
+}
+.demo-card-wide > .mdl-card__menu {
+ color: #fff;
+}
+
+#introCard{
+  
+}
+#introBack{
+  background: url("http://i.ytimg.com/vi/tTKxI4XJngw/maxresdefault.jpg") center / cover;
+}
+#q1Card {
+  display: none;
+}
+#q1back {
+  background: url("http://static.comicvine.com/uploads/original/7/70453/1588263-tk421.png") center / cover;
+}
+#q2Card {
+  display: none;
+}
+#q2back {
+  background: url("http://hdwallpapers.cat/wallpaper/boba_fett_starwars_film_movie_entertainment_hd-wallpaper-1714987.jpg") center / cover;
+}
+#q3Card {
+  display: none;
+}
+#q3back {
+  background: url("http://www.slate.com/content/dam/slate/articles/arts/low_concept/2015/04/150416_LOW_OldSolo.jpg.CROP.original-original.jpg") center / cover;
+}
+#q4Card {
+  display: none; 
+}
+#q4back {
+  background: url("http://www.galacticbinder.com/images/making-of-tython.jpg") bottom / cover;
+}
+#q5Card {
+  display: none;
+}
+#q5back{ 
+background: url('http://images4.alphacoders.com/861/86176.jpg') top / cover;
+
+}
+#q6Card {
+  display: none;
+}
+#q6back {
+  background: url("http://pre15.deviantart.net/5bed/th/pre/f/2014/071/d/1/korriban_by_suirebit-d79yctl.jpg") center / cover;
+}
+#q7Card {
+  display: none;
+}
+#q7back {
+  background: url("http://img1.wikia.nocookie.net/__cb20100514125107/starwars/images/c/c1/MCQ-bay94.jpg") center / cover;
+}
+#q8Card {
+  display: none;
+}
+#q8back {
+  background: url("http://img4.wikia.nocookie.net/__cb20120110005334/starwars/images/c/c0/ExecutorShuttle-ESB.jpg") center / cover;
+}
+#q9Card {
+  display: none;
+}
+#q9back {
+  background: url("http://img1.wikia.nocookie.net/__cb20130303053823/starwars/images/9/9b/BlackSquadron_Battle_of_Yavin.png") center / cover;
+}
+#q10Card {
+  display: none;
+}
+#q10back {
+  background: url("http://i82.servimg.com/u/f82/14/32/27/94/juyo10.jpg") top / cover;
+}
+#scoreCard {
+  display: none;
+}
+#scoreBack{
+  background: url("http://www.1zoom.me/big2/66/315452-Sepik.jpg") center / cover;
 }
